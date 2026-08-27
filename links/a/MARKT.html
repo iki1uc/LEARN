@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>MARKT · ECO · PIPELINE3</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:Consolas, monospace; padding:30px; }
+pre { background:#111; padding:15px; border-left:3px solid #6cf; }
+</style>
+</head>
+
+<body>
+
+<h1>MARKT · ECO · PIPELINE3</h1>
+<pre id="out"></pre>
+
+<script type="module">
+import { MXU_fullSync } from "./MXU_fullSync.js";
+
+const sync = MXU_fullSync({ msg: "ECO.MARKT" });
+
+document.getElementById("out").innerHTML =
+    `<h2>MARKT</h2><pre>${JSON.stringify(sync.treue, null, 2)}</pre>`;
+</script>
+
+</body>
+</html>
