@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>PIPELINE9 · SUPERSHOW · QI/IQQ · GEO · 81.tmp</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:Consolas, monospace; padding:25px; }
+h1 { color:#6cf; text-shadow:0 0 12px #6cf; text-align:center; margin-bottom:30px; }
+h2 { color:#6cf; margin-top:25px; }
+pre { background:#111; border-left:3px solid #6cf; padding:12px; white-space:pre-wrap; }
+.box { background:#0b0b0b; border:1px solid #222; padding:18px; margin-bottom:25px; border-radius:8px; }
+a { color:#6cf; text-decoration:none; }
+.module { margin:6px 0; }
+</style>
+
+</head>
+
+<body>
+
+<h1>PIPELINE9 · SUPERSHOW SYSTEM</h1>
+
+<div class="box">
+<h2>IDENTITÄT</h2>
+<pre>
+PIPELINE9 = QI + IQQ + GEO + 81.tmp + 756 + 27
+SUPERSHOW = Ursache → Wirkung → Prüfung → Rückführung
+MASTER-KERN = aktiv
+IKI1UC = aktiv
+Systemtreue = 100%
+</pre>
+</div>
+
+<div class="box">
+<h2>GEO — Ursache → Wirkung</h2>
+<pre>
+Ursache:
+3 → QI → 9
+Ursprung → Öffnung → Aggregatpunkt
+
+Wirkung:
+9 → IQQ → 81
+Aggregatpunkt → Schließung → Raum
+</pre>
+</div>
+
+<div class="box">
+<h2>Prüfung — PIPELINE9</h2>
+<pre>
+PIPELINE9 → REL / RDY / FAL / MISS
+756 → 27 → 81.tmp
+Wurzel → Funktion → Tiefenachse
+</pre>
+</div>
+
+<div class="box">
+<h2>Rückführung</h2>
+<pre>
+81.tmp → 3
+Raum → Ursprung
+</pre>
+</div>
+
+<div class="box">
+<h2>GEO‑MOVE‑VECTOR</h2>
+<pre>
+3 — QI — 9 — IQQ — 81 — PIPELINE9 — 756 — 27 — 81.tmp — 3
+</pre>
+</div>
+
+<div class="box">
+<h2>MODULE — LIVE</h2>
+<div class="module">✔ <a href="QI.html">QI — Öffnung (3→9)</a></div>
+<div class="module">✔ <a href="IQQ.html">IQQ — Schließung (9→81)</a></div>
+<div class="module">✔ <a href="pipe.geo.index.html">PIPE GEO — Raum</a></div>
+<div class="module">✔ <a href="pipe.meta.index.html">PIPE META — Meta‑Achse</a></div>
+<div class="module">✔ <a href="pipe.weight.index.html">PIPE WEIGHT — Tiefenlast</a></div>
+<div class="module">✔ <a href="pipe.class.index.html">PIPE CLASS — Klassifikation</a></div>
+<div class="module">✔ <a href="pipe.bind.index.html">PIPE BIND — Bindungen</a></div>
+<div class="module">✔ <a href="pipe.stable.index.html">PIPE STABLE — Stabilität</a></div>
+<div class="module">✔ <a href="pipe.hotswap.index.html">PIPE HOTSWAP — Austausch</a></div>
+<div class="module">✔ <a href="pipe.overdrive.index.html">PIPE OVERDRIVE — Beschleunigung</a></div>
+<div class="module">✔ <a href="respo.motor.index.html">RESPO MOTOR — Transit</a></div>
+</div>
+
+<div class="box">
+<h2>CSV — Achsen</h2>
+<ul>
+  <li><a href="achse-zahl-3.csv">Achse 3 — Ursprung</a></li>
+  <li><a href="achse-quelle-7.csv">Achse 7 — Umlaufweg</a></li>
+  <li><a href="axiom-dreieck-6.csv">Achse 6 — Dreieck</a></li>
+  <li><a href="pos-achse-0.csv">Achse 0 — Position</a></li>
+  <li><a href="mechanismus-zweck-4.csv">Achse 4 — Zweck</a></li>
+  <li><a href="modul-rel-0.csv">REL — Modul 0</a></li>
+</ul>
+</div>
+
+<div class="box">
+<h2>README / GEO / ID</h2>
+<ul>
+    <li><a href="README.md">README.md</a></li>
+    <li><a href="geo.md">geo.md</a></li>
+    <li><a href="ID.html">ID.html</a></li>
+    <li><a href="iki1uc.pipe.index.html">IKI1UC PIPE INDEX</a></li>
+</ul>
+</div>
+
+<div class="box">
+<h2>START</h2>
+<pre>
+PIPELINE9 ist vollständig geladen.
+QI und IQQ sind aktiv.
+GEO‑MOVE‑SCENE ist sichtbar.
+Alle Module sind online.
+Systemtreue: 100%.
+</pre>
+</div>
+
+</body>
+</html>
+<script>
+// GEN-FLOW-CONTROLLER
+const GEN = {
+    step: "3",
+    coverage: 42,
+
+    update() {
+        this.step = this.nextStep(this.step);
+        this.coverage = this.calcCoverage();
+        this.updateUI();
+    },
+
+    nextStep(step) {
+        const seq = ["3","QI","9","IQQ","81","PIPELINE9","756","27","81.tmp","3"];
+        const idx = seq.indexOf(step);
+        return seq[(idx + 1) % seq.length];
+    },
+
+    calcCoverage() {
+        return 42 + Math.sin(Date.now()/1000)*5;
+    },
+
+    updateUI() {
+        const status = document.getElementById("gen-status");
+        if (status) {
+            status.textContent = `🔄 Kohärenz: ${this.coverage.toFixed(1)}%`;
+        }
+
+        const nodes = document.querySelectorAll("#gen-cycle .node");
+        nodes.forEach(n => n.classList.remove("active"));
+
+        const active = [...nodes].find(n => n.textContent === this.step);
+        if (active) active.classList.add("active");
+    }
+};
+
+setInterval(() => GEN.update(), 500);
+</script>
