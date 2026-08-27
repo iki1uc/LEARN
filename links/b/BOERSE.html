@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>BOERSE · ECO · PIPELINE6</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:Consolas, monospace; padding:30px; }
+pre { background:#111; padding:15px; border-left:3px solid #f06; }
+</style>
+</head>
+
+<body>
+
+<h1>BOERSE · ECO · PIPELINE6</h1>
+<pre id="out"></pre>
+
+<script type="module">
+import { MXU_fullSync } from "./MXU_fullSync.js";
+
+const sync = MXU_fullSync({ msg: "ECO.BOERSE" });
+
+document.getElementById("out").innerHTML =
+    `<h2>BOERSE</h2><pre>${JSON.stringify(sync.axis, null, 2)}</pre>`;
+</script>
+
+</body>
+</html>

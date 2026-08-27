@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>DOM · ECO · PIPELINE6</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:Consolas, monospace; padding:30px; }
+h1 { color:#6cf; }
+pre { background:#111; padding:15px; border-left:3px solid #f06; }
+</style>
+</head>
+
+<body>
+
+<h1>DOM · ECO · PIPELINE6</h1>
+<pre id="out"></pre>
+
+<script type="module">
+import { MXU_fullSync } from "./MXU_fullSync.js";
+import { AXINXA } from "./AXINXA.js";
+
+// ECO‑DOM‑Signal
+const sync = MXU_fullSync({ msg: "ECO.DOM" });
+
+// Achsen‑Feed
+const axis = AXINXA.runAll();
+
+// Ausgabe
+document.getElementById("out").innerHTML =
+    `<h2>AXIS · DOM</h2><pre>${JSON.stringify(axis, null, 2)}</pre>`;
+</script>
+
+</body>
+</html>
