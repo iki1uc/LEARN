@@ -1,0 +1,34 @@
+{
+    "geo": "RAWATOR-GEO-81",
+    "dimensions": {
+        "x": 9,
+        "y": 9,
+        "z": 1
+    },
+    "structure": {
+        "frames": 81,
+        "grid": "9x9",
+        "type": "hologramm",
+        "mode": "neutral"
+    },
+    "position": {
+        "orbit": 4,
+        "station": "RAWATOR",
+        "korridor": "HOLO-AXIS"
+    },
+    "links": {
+        "nc": "NC.RAWATOR",
+        "sys": "SYS.HOLO",
+        "tem": "TEM.RAW",
+        "riz": "RIZ.HOLO"
+    },
+    "vital": {
+        "base": 0.81,
+        "mod": "molecule-driven",
+        "pulse": "anime-shuffle"
+    },
+    "meta": {
+        "engine": "IKI1UC-GEO",
+        "updated": "2026-08-26"
+    }
+}

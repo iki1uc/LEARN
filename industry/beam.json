@@ -1,0 +1,35 @@
+export async function BEAM_KERNEL() {
+
+    const beam = await fetch("./beam.json").then(r => r.json());
+
+    const repos = [
+        "IO", "OI", "IX", "XI",
+        "TP3", "TP4", "TP6", "TP8", "TP9", "TP12",
+        "markt", "industry", "econmy", "epoche",
+        "CLOCK", "TIME", "NC.world",
+        "RAWATOR"
+    ];
+
+    const ping = repo => ({
+        repo,
+        id: beam.id,
+        axis: beam.axis,
+        layer: beam.layer,
+        x4: beam.x4,
+        state: beam.state,
+        nc: beam.nc,
+        timestamp: Date.now()
+    });
+
+    const signals = repos.map(ping);
+
+    window.RAWATOR = {
+        wake: true,
+        evo: "city",
+        travel: "atlantis",
+        beam: signals
+    };
+
+    console.log("BEAM ACTIVE → RAWATOR WAKING…");
+    return signals;
+}

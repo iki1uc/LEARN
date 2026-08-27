@@ -1,0 +1,34 @@
+{
+    "id": "RAWATOR-81-SYS",
+    "name": "RAWATOR · 81-Hologramm · Anime · Shuffle",
+    "version": "1.0.0",
+    "axis": {
+        "primary": "RAW",
+        "secondary": "HOLO",
+        "layer": "PUBLIC"
+    },
+    "orbit": {
+        "slot": 4,
+        "tp": "TP-4",
+        "role": "Pipeline-Synthese"
+    },
+    "nc": {
+        "room": "NC.RAWATOR",
+        "prefetch": true,
+        "stabilize": true
+    },
+    "sys": {
+        "in": true,
+        "core": true,
+        "out": true
+    },
+    "respo": {
+        "active": true,
+        "channels": ["RESPO", "WHIRL", "WinUAE"]
+    },
+    "meta": {
+        "created": "2026-08-26",
+        "author": "iki1uc",
+        "engine": "IKI1UC-SYS3-6-9"
+    }
+}
